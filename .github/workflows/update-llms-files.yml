@@ -1,17 +1,20 @@
-name: Update LLMs Context Files
+name: Update LLMs Context Files (DEACTIVATED)
 
-on:
-  schedule:
-    # Run daily at 3 AM UTC (after OpenAPI updates at 2 AM)
-    - cron: '0 3 * * *'
-  workflow_dispatch: # Allow manual triggering
-  push:
-    paths:
-      - 'docs/docs.json'
-      - 'docs/api-reference/**'
-      - 'docs/implementations/**'
-      - 'docs/.github/workflows/update-llms-files.yml'
-      - 'docs/scripts/update-llms-files.py'
+# WORKFLOW DEACTIVATED - Uncomment 'on:' section below to reactivate
+# on:
+#   schedule:
+#     # Run daily at 3 AM UTC (after OpenAPI updates at 2 AM)
+#     - cron: '0 3 * * *'
+#   workflow_dispatch: # Allow manual triggering
+#   push:
+#     paths:
+#       - 'docs/docs.json'
+#       - 'docs/api-reference/**'
+#       - 'docs/implementations/**'
+#       - 'docs/.github/workflows/update-llms-files.yml'
+#       - 'docs/scripts/update-llms-files.py'
+
+on: []  # Empty trigger list - workflow will not run
 
 jobs:
   update-llms-files:

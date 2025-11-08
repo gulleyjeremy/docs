@@ -1,10 +1,13 @@
-name: Update OpenAPI Spec
+name: Update OpenAPI Spec (DEACTIVATED)
 
-on:
-  schedule:
-    # Run nightly at 2 AM UTC
-    - cron: '0 2 * * *'
-  workflow_dispatch: # Allow manual triggering
+# WORKFLOW DEACTIVATED - Uncomment 'on:' section below to reactivate
+# on:
+#   schedule:
+#     # Run nightly at 2 AM UTC
+#     - cron: '0 2 * * *'
+#   workflow_dispatch: # Allow manual triggering
+
+on: []  # Empty trigger list - workflow will not run
 
 jobs:
   update-openapi:
